@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    @apply bg-purple-500;
+    border-radius: 4px;
+}
+*::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-700;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+} 
+*::-webkit-scrollbar-thumb:active {
+    @apply bg-purple-800;
+}
+::-moz-selection { /* Code for Firefox */
+    @apply text-white bg-purple-600;
+}
+
+::selection {
+    @apply text-white bg-purple-600;
+}
+
+.__651_card{
+    @apply bg-white rounded-md drop-shadow border my-7;
+}
+.__651_card-body{
+    @apply px-5 py-4;
+}
+.__651_form-group .__651_label{
+    @apply -mt-5 block font-bold uppercase mb-2;
+}
+.__651_form-group{
+    @apply pt-7 mb-4 relative;
+}
+.__651_input{
+    @apply w-full px-3 py-2 border border-slate-300 rounded;
+}
+.__651_input.__focus{
+    @apply focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500;
+}
+.__651_input.__hover{
+    @apply hover:border-purple-500;
+}
+.__651_input.__placeholder{
+    @apply  placeholder:text-slate-400 placeholder:italic;
+}
+.__651_btn{
+    @apply w-full bg-purple-500 py-3 px-4 rounded cursor-pointer text-lg font-semibold text-center uppercase text-white hover:bg-purple-600 transition-colors;
+}
