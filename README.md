@@ -1,2 +1,1 @@
-# citas-mascota
- Ejemplo de citas de mascotas hecho con REACT
+# Practica Veterinaria con React
